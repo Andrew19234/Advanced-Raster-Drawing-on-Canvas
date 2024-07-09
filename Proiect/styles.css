@@ -1,0 +1,38 @@
+canvas {
+  border: 1px solid #000;
+  cursor: crosshair;
+}
+/* Stil pentru butoane */
+button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Efect de tranziție la hover */
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Stil pentru lista de forme */
+#shapeList {
+  margin-top: 20px;
+  padding-left: 0; /* Eliminare padding implicit */
+  list-style: none; /* Eliminare stiluri implicite pentru listă */
+}
+
+#shapeList li {
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease; /* Efect de tranziție la hover */
+}
+
+#shapeList li:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Desenare Figuri</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="myCanvas" width="800" height="600"></canvas>
+    <label>
+      Culoare linie:
+      <input type="color" id="colorPicker" value="#000000" />
+    </label>
+    <label>
+      Grosime linie:
+      <input type="number" id="lineWidth" value="2" min="1" />
+    </label>
+    <select id="shapeSelector">
+      <option value="ellipse">Elipsă</option>
+      <option value="rectangle">Dreptunghi</option>
+      <option value="line">Linie</option>
+    </select>
+    <button id="exportPngBtn">Exportă PNG</button>
+    <button id="exportJpegBtn">Exportă JPEG</button>
+    <!-- <button id="exportSvgBtn">Exportă SVG</button> -->
+    <ul id="shapeList"></ul>
+    <label>
+      Culoare fundal canvas:
+      <input type="color" id="backgroundColorPicker" value="#ffffff" />
+    </label>
+    <button id="applyBackgroundColorBtn">Aplică culoarea de fundal</button>
+    <label>
+      Modifică proprietățile figurii:
+      <input type="number" id="newX" placeholder="Noua poziție X" />
+      <input type="number" id="newY" placeholder="Noua poziție Y" />
+      <input type="number" id="newWidth" placeholder="Noua lățime" />
+      <input type="number" id="newHeight" placeholder="Noua înălțime" />
+      <button id="applyPropertiesBtn">Aplică proprietățile</button>
+    </label>
+    <script src="script.js"></script>
+  </body>
+</html>
